@@ -185,7 +185,7 @@ className="mb-4">
     >
 
 
-        <motion.div
+        { <motion.div
         className="h-52 mt-6"
             style={{
                 padding: 'auto',
@@ -204,7 +204,7 @@ className="mb-4">
                 </motion.div>
                 )})
             }
-        </motion.div>
+        </motion.div> }
     </motion.div>
 
 {/* <div className="my-8">
@@ -250,7 +250,7 @@ ref={boxRef}
 >
 
 
-    <motion.div
+    {<motion.div
     className="h-[168px]"
     style={{
       padding: 'auto',
@@ -270,7 +270,7 @@ ref={boxRef}
             </motion.div>
             )})
         }
-    </motion.div>
+    </motion.div> }
 </motion.div>
 
 <div className="mt-8 flex items-center justify-start">
@@ -317,7 +317,7 @@ ref={boxRef}
     dragConstraints={boxRef}
   >
     {thumbnail.map((thumbnail, index) => (
-      <motion.div key={index} className="pointer-events-none cursor-pointer h-[640px] w-[360px]">
+      <motion.div key={index} className="pointer-events-none cursor-pointer w-[360px]">
         <Image src={thumbnail} alt={`image-${index}`} className="rounded-lg shadow-xl" />
       </motion.div>
     ))}
